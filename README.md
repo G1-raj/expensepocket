@@ -32,5 +32,5 @@ Expense Pocket is a Flutter-based **budget and loan management** app designed to
 
 
 ## Contact
-For queries or support, reach out at [your-email@example.com](mailto: govindrajput7767@gmail.com).
+For queries or support, reach out at (mailto: govindrajput7767@gmail.com).
 
