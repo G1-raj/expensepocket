@@ -13,7 +13,7 @@ Expense Pocket is a Flutter-based **budget and loan management** app designed to
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/expense-pocket.git
+   git clone https://github.com/G1-raj/expensepocket.git
    cd expense-pocket
    ```
 2. **Install dependencies**:
