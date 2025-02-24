@@ -1,3 +1,4 @@
+import 'package:expensepoket/views/home/profile_view.dart';
 import 'package:expensepoket/views/screens/budget_view.dart';
 import 'package:expensepoket/views/screens/loans_view.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class _HomeViewState extends State<HomeView> {
   final List<Widget> _pages = [
     BudgetView(),
     LoansView(),
-    const Center(child: Text("Profile Page", style: TextStyle(fontSize: 20))),
+    ProfileView()
   ];
 
   @override
@@ -27,6 +28,7 @@ class _HomeViewState extends State<HomeView> {
 
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
+          selectedItemColor: Colors.deepPurple,
           onTap: (index) {
             setState(() {
               _selectedIndex = index; // Update selected tab

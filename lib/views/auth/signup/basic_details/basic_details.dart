@@ -28,7 +28,6 @@ class _BasicDetailsState extends State<BasicDetails> {
   late String userName;
   late String email;
   late String password;
-  late String mobileno;
 
   @override
   void initState() {
@@ -38,7 +37,6 @@ class _BasicDetailsState extends State<BasicDetails> {
     userName = args['userName'];
     email = args['email'];
     password = args['password'];
-    mobileno = args['mobileno'];
 
   }
 
@@ -84,7 +82,7 @@ class _BasicDetailsState extends State<BasicDetails> {
                     child: ElevatedButton(
                       onPressed: _submitSalary,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue,
+                        backgroundColor: Colors.deepPurpleAccent,
                         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 40),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                       ),
@@ -118,8 +116,7 @@ class _BasicDetailsState extends State<BasicDetails> {
                             auth.createAccount(
                                 userName, 
                                 email, 
-                                password, 
-                                mobileno, 
+                                password
                               );
 
                               budget.addExpense(
@@ -168,7 +165,7 @@ class _BasicDetailsState extends State<BasicDetails> {
                               );
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.green,
+                            backgroundColor: Colors.deepPurpleAccent,
                             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 40),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                           ),

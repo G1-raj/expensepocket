@@ -36,7 +36,7 @@ class AuthController extends GetxController {
 
   }
 
-  Future<void> createAccount(String userName, String email, String password, String mobileNo) async {
+  Future<void> createAccount(String userName, String email, String password) async {
 
     try {
 
@@ -44,7 +44,6 @@ class AuthController extends GetxController {
         userName: userName, 
         email: email, 
         password: password, 
-        mobileNo: mobileNo, 
       );
 
       String userJson = jsonEncode(user.toJson());

@@ -31,8 +31,8 @@ class SignupView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(
-                    radius: 52,
-                    backgroundImage: AssetImage(googleLogo),
+                    radius: 72,
+                    backgroundImage: AssetImage(appLogo),
                   ),
             
                   const SizedBox(height: 18,),
@@ -80,14 +80,14 @@ class SignupView extends StatelessWidget {
                       height: screenHeight * 0.06,
                       child: ElevatedButton(
                         onPressed: () {
-                          Get.toNamed('/mobileAuth_view', arguments: {
+                          Get.toNamed('/basicDetails_view', arguments: {
                             'email': _emailController.text,
                             'userName': _usernameController.text,
                             'password': _passController.text,
                           });
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: appTheme,
+                          backgroundColor: Colors.deepPurpleAccent,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12.0),
                           ),
